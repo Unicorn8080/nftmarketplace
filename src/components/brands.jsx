@@ -20,14 +20,14 @@ const Brands = () => {
     {id: 6, path:"images/relume-black.svg", style:"w-[183px] h-[52px]"},
   ];
   return (
-    <div>
-    <div className="flex w-[1440px] items-center justify-center gap-[10px] px-[16px] py-[15px] bg-secondary">
-      {/* <Slider {...settings}> */}
-        {items.map((item, index) => (                  
-            <img  key={"item-" + index} className={item.style} alt={item.path.split('/')[1].split('.')[0]} src={item.path} />          
-        ))}        
-      {/* </Slider>       */}
-    </div>
+    <div className="overflow-hidden">
+      <div className="flex max-w-[1440px] items-center justify-center gap-[10px] px-[16px] py-[15px] bg-secondary">
+        {/* <Slider {...settings}> */}
+          {items.map((item, index) => (                  
+              <img  key={"item-" + index} className={item.style} alt={item.path.split('/')[1].split('.')[0]} src={item.path} />          
+          ))}        
+        {/* </Slider>       */}
+      </div>
     </div>
   );
 }
