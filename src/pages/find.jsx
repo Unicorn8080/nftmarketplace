@@ -49,21 +49,21 @@ const Find = () => {
             pagination={{
               clickable: true,
             }}
-            // breakpoints={{
-            //   800: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20,
-            //   },
-            //   1100: {
-            //     slidesPerView: 3,
-            //     spaceBetween: 30,
-            //   },
-            //   1500: {
-            //     slidesPerView: 4,
-            //     spaceBetween: 40,
-            //   },
+            breakpoints={{
+              800: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1100: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1500: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
               
-            // }}
+            }}
             modules={[Pagination]}
             className="mySwiper px-[200px]"
           >
