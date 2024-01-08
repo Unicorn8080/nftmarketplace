@@ -58,7 +58,7 @@ const About = () => {
             </div>
           </div>          
         </div>
-        <img className="flex-1 max-w-[536px] rounded-[50px]" alt="Group" src="images/IMG_0726.jpg" />
+        <img className="flex-1 max-w-[536px] rounded-[50px]" alt="Group" src="images/group-72.jpg" />
       </div>
       <div className="flex">
         <img className="w-[25vw]" alt="Spline" src="images/spline-18.png" />
