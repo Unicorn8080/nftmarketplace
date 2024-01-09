@@ -7,7 +7,9 @@ import About from './pages/about';
 import Find from './pages/find';
 import Faq from './pages/faq';
 
+
 function App() {
+      
   return (
     <div>
       <PageLayout>

@@ -1,7 +1,17 @@
 import MiddleRound from "../components/middleRound";
 import DownVector from "../components/downVector";
+import { Account } from "../components/account";
+import { WalletOptions } from "../components/wallet-options";
+import { useAccount } from "wagmi";
 
-const Hero = () => {
+function ConnectWallet() { 
+  const { isConnected } = useAccount() 
+  if (isConnected) return <Account /> 
+  return <WalletOptions /> 
+} 
+
+const Hero = (props) => {
+    const { connect, isConnected, address } = props;
     return (
       <div className="relative flex flex-col items-center gap-[30px] mx-auto mt-[60px]">
         <MiddleRound className="absolute top-[-200px] left-[-350px]"/>
@@ -15,7 +25,11 @@ const Hero = () => {
             Digital marketplace for crypto collectibles and NFTs, buy, sell and discover exclusive digital assets today.
           </p>
           <div className="w-[264px] h-[70px] flex items-center justify-center px-[37px] py-[19px] rounded-[60px] [background:linear-gradient(180deg,rgb(255,64,96)_0%,rgb(255,128,196)_52%,rgb(109,94,234)_100%)]">
-            <div className="w-fit text-[#000000] text-[16px] tracking-[0] leading-[normal] whitespace-nowrap">connect wallet</div>
+            <div className="w-fit text-[#000000] text-[16px] tracking-[0] leading-[normal] whitespace-nowrap z-[100]" onClick={connect}>
+              <ConnectWallet />
+              {/* {isConnected ? (address.slice(0,4) + "..." + address.slice(38)): "Connect"} */}
+            </div>
+            
           </div>
         </div>
         <div>
