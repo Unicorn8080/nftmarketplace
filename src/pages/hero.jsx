@@ -1,6 +1,11 @@
+import MiddleRound from "../components/middleRound";
+import DownVector from "../components/downVector";
+
 const Hero = () => {
     return (
-      <div className="flex flex-col items-center gap-[30px] mx-auto mt-[60px]">
+      <div className="relative flex flex-col items-center gap-[30px] mx-auto mt-[60px]">
+        <MiddleRound className="absolute top-[-200px] left-[-350px]"/>
+        <DownVector className="absolute top-0 left-[75px]"/>
         <div className="flex flex-col items-center gap-[10px]">
           <img className="w-[36px] h-[67px]" alt="ETH" src="images/frame.svg" />
           <h2 className="max-w-[768px] [font-family:'Inter-Bold', Helvetica] font-bold text-[70px] text-center traking-[0] leading-[65px]">
@@ -14,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <img className="w-[971px] h-[375px]" alt="Characters" src="images/characters.png" />
+          <img className="w-[971px] h-[375px] z-[10]" alt="Characters" src="images/characters.png" />
         </div>        
       </div>
     );

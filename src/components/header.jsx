@@ -1,7 +1,11 @@
+import RoundEffect from '../components/roundEffect';
+
 const Header = () => {
   return (
     <>
-    <div className="flex w-full items-center justify-between relative bg-primary pt-[36px] lg:px-[50px] xl:px-[200px] 2xl:px-[400px]">
+    <div className="relative flex w-full items-center justify-between relative bg-primary pt-[36px] lg:px-[50px] xl:px-[200px] 2xl:px-[400px]">
+      <RoundEffect className="absolute left-[-302px] top-[-258px]"/>
+      <RoundEffect className="absolute right-[-400px] top-[-420px]"/>
       <img
         className="w-[157px] h-[32px]"
         alt="Logo criptoart"

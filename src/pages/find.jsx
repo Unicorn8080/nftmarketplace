@@ -14,6 +14,22 @@ const cardItems = [
   {id:"6", no: "F.", type: "Monkey Icon", imagePath:"images/IMG_0725.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
   {id:"7", no: "G.", type: "Monkey Icon", imagePath:"images/IMG_0727.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
   {id:"8", no: "H.", type: "Monkey Icon", imagePath:"images/IMG_0726.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"1", no: "A.", type: "Monkey Icon", imagePath:"images/IMG_0724.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"2", no: "B.", type: "Monkey Icon", imagePath:"images/IMG_0725.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"3", no: "C.", type: "Monkey Icon", imagePath:"images/IMG_0726.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"4", no: "D.", type: "Monkey Icon", imagePath:"images/IMG_0727.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"5", no: "E.", type: "Monkey Icon", imagePath:"images/IMG_0724.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"6", no: "F.", type: "Monkey Icon", imagePath:"images/IMG_0725.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"7", no: "G.", type: "Monkey Icon", imagePath:"images/IMG_0727.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"8", no: "H.", type: "Monkey Icon", imagePath:"images/IMG_0726.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"1", no: "A.", type: "Monkey Icon", imagePath:"images/IMG_0724.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"2", no: "B.", type: "Monkey Icon", imagePath:"images/IMG_0725.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"3", no: "C.", type: "Monkey Icon", imagePath:"images/IMG_0726.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"4", no: "D.", type: "Monkey Icon", imagePath:"images/IMG_0727.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"5", no: "E.", type: "Monkey Icon", imagePath:"images/IMG_0724.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"6", no: "F.", type: "Monkey Icon", imagePath:"images/IMG_0725.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"7", no: "G.", type: "Monkey Icon", imagePath:"images/IMG_0727.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
+  {id:"8", no: "H.", type: "Monkey Icon", imagePath:"images/IMG_0726.jpg", remainingTime: "12h:10m:23s", highestBid: "18.87"},
 ];
 
 const Find = () => {
