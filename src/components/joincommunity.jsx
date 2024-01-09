@@ -26,6 +26,7 @@ const JoinOurCommunity = () => {
           alt="Frame"
           src="images/frame-68.png"
         />
+        
       </div>
       <div className="inline-flex items-start gap-[20px] relative flex-[0_0_auto]">
         <a href="https://discord.com">
