@@ -1,4 +1,5 @@
 import RoundEffect from '../components/roundEffect';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -11,12 +12,12 @@ const Header = () => {
         alt="Logo criptoart"
         src="https://c.animaapp.com/qW8jmQ6M/img/logo-criptoart.svg"
       />
-      <div className="hidden md:flex items-start gap-[24px] flex-[0_0_auto]">
-        <div className="w-fit mt-[-1.00px] font-bold text-[#50d71e] text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">HOME</div>
-        <div className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">ABOUT</div>
-        <div className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">CHARACTERS</div>
-        <div className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">FAQ</div>
-        <div className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">COMMUNITY</div>
+      <div className="hidden md:flex items-start gap-[24px] flex-[0_0_auto] z-[100]">
+        <Link smooth={true} duration={500} className="cursor-pointer" to=""><p className="w-fit mt-[-1.00px] font-bold text-[#50d71e] text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">HOME</p></Link>
+        <Link smooth={true} duration={500} className="cursor-pointer" to="about"><p className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">ABOUT</p></Link>
+        <Link smooth={true} duration={500} className="cursor-pointer" to="character"><p className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">CHARACTERS</p></Link>
+        <Link smooth={true} duration={500} className="cursor-pointer" to="faq"><p className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">FAQ</p></Link>
+        <Link smooth={true} duration={500} className="cursor-pointer" to="community"><p className="w-fit mt-[-1.00px] font-bold text-white text-[14px] tracking-[0] leading-[22px] whitespace-nowrap">COMMUNITY</p></Link>
       </div>
       <div className="flex items-start gap-[17px] flex-[0_0_auto]">
         <img className="w-[18px] h-[18px]" alt="Github logo" src="images/git-hub-logo.svg" />

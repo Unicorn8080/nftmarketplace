@@ -12,7 +12,7 @@ const faqs = [
 const Faq = () => {
   
   return(
-    <div className="flex flex-col items-center mt-[100px] gap-[46px]">
+    <div id="faq" className="flex flex-col items-center mt-[100px] gap-[46px]">
       <div className="flex flex-col items-center">
         <div className="w-fit font-bold text-secondary text-[30px] tracking-[0] leading-[36px] whitespace-nowrap">
           FAQ

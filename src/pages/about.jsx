@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="py-[120px] flex flex-col items-center justify-center gap-[60px]">
+    <div id="about" className="py-[120px] flex flex-col items-center justify-center gap-[60px]">
       <div className="flex flex-col items-center gap-[13px]">
         <p className="max-w-[616px] text-center text-[40px] font-bold tracking-[0] leading-[44.0px]">
           A new wave of collectibles is about to hit the blockchain
