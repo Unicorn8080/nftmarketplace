@@ -11,20 +11,22 @@ const Question = (props) => {
 
   const { ask, answer } = props;
   return (
-    <div className="flex flex-col items-start w-[652px]">
-      <div className="flex px-[24px] py-[20px] bg-[#0000001a] rounded-[10px] border border-solid border-transparent">
-        <div className="w-[652px] font-bold text-[18px] tracking-[0] leading-[27px]">
-          {ask}
+    <div className="mx-auto w-[350px] xs:w-[400px] sm:w-3/4 md:w-2/3 lg:w-1/2">    
+      <div className="flex flex-col items-start">
+        <div className="flex px-[24px] py-[20px] items-center w-full justify-between bg-[#0000001a] rounded-[10px] border border-solid border-transparent">
+          <div className="font-bold text-[18px] tracking-[0] leading-[27px]">
+            {ask}
+          </div>
+          {isToggled ? (
+            // <img className="w-[32px] h-[32px]" onClick={()=>handleClick()} alt="Plus" src="images/plus.svg" />
+            <p className="font-normal text-[32px] leading-[32px] w-[32px]" onClick={()=>handleClick()}>-</p>
+          ) : (
+            <p className="font-normal text-[32px] leading-[32px] w-[32px]" onClick={()=>handleClick()}>+</p>
+          )}
         </div>
-        {isToggled ? (
-          // <img className="w-[32px] h-[32px]" onClick={()=>handleClick()} alt="Plus" src="images/plus.svg" />
-          <p className="font-normal text-[32px] leading-[32px] w-[32px]" onClick={()=>handleClick()}>-</p>
-        ) : (
-          <p className="font-normal text-[32px] leading-[32px] w-[32px]" onClick={()=>handleClick()}>+</p>
-        )}
+        {isToggled && <div className={`flex px-[24px] py-[20px] bg-[#0000001a] rounded-[10px]`}>{answer}</div> }
+        
       </div>
-      {isToggled && <div className={`flex px-[24px] py-[20px] bg-[#0000001a] rounded-[10px] transition-all duration-1000 ease-in-out ${isToggled ? 'expanded' : 'h-[0]'}`}>{answer}</div> }
-      
     </div>
   );
 };

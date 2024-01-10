@@ -7,9 +7,11 @@ const About = () => {
         </p>
         <p className="max-w-[728px] text-center text-[16px] font-normal tracking-[0] leading-[24px]">Characterised by soft lighting, vintage colour schemes and quirky costumes, these generative 3D TinyFaces are the addition to your NFT collection you've been waiting for.</p>
       </div>
-      <div className="w-full flex flex-col items-center lg:flex-row lg:items-end lg:justify-center">
-        <img className="flex-1 max-w-[536px]" alt="Group" src="images/group-71.png" />
-        <div className="flex-1 max-w-[506px]">
+      <div className="max-w-[1200px] w-full flex flex-col items-center lg:flex-row lg:items-end lg:justify-center">
+        <div className="flex-1 max-w-100 p-16">
+          <img alt="Group" src="images/group-71.png" />
+        </div>          
+        <div className="flex-1 max-w-100 p-8">
           <div className="flex flex-col items-center lg:items-start gap-[24px]">
             <div className="flex flex-col items-start gap-[14px]">
               <div className="flex flex-col items-start gap-[4px]">
@@ -35,8 +37,11 @@ const About = () => {
         </div>
 
       </div>
-      <div className="w-full flex flex-col items-center lg:flex-row lg:items-end lg:justify-center">
-        <div className="flex-1 max-w-[506px]">
+      <div className="max-w-[1200px] w-full flex flex-col items-center lg:flex-row-reverse lg:items-end lg:justify-center">
+        <div className="flex-1 max-w-100 p-16 rounded-[50px]">
+          <img alt="Group" src="images/group-72.png" />
+        </div>
+        <div className="flex-1 max-w-100 p-8">
           <div className="flex flex-col items-center lg:items-start gap-[24px]">
             <div className="flex flex-col items-start gap-[14px]">
               <div className="flex flex-col items-start gap-[4px]">
@@ -58,7 +63,8 @@ const About = () => {
             </div>
           </div>          
         </div>
-        <img className="flex-1 max-w-[536px] rounded-[50px]" alt="Group" src="images/group-72.png" />
+        
+        
       </div>
       <div className="flex">
         <img className="w-[25vw]" alt="Spline" src="images/spline-18.png" />

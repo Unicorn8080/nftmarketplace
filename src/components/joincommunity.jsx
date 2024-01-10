@@ -28,7 +28,7 @@ const JoinOurCommunity = () => {
         />
         
       </div>
-      <div className="inline-flex items-start gap-[20px] relative flex-[0_0_auto]">
+      <div className="flex flex-col md:flex-row items-start gap-[20px] relative flex-[0_0_auto]">
         <a href="https://discord.com">
           <div className="flex w-[225px] items-center justify-center gap-[10px] px-[40px] py-[24px] relative bg-[#5765f2] rounded-[60px] border border-solid">
             <img

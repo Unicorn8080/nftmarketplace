@@ -201,7 +201,7 @@ const cardItems = [
 
 const Find = () => {
   return (
-    <div id="character" className="w-full max-w-[100%] flex flex-col items-start gap-[40px] px-[120px] py-0">
+    <div id="character" className="w-full max-w-[1300px] flex flex-col items-center gap-[40px] px-4 py-0">
       <div className="flex justify-between items-end self-stretch w-full flex-[0_0_auto]">
         <div className="flex flex-col items-start flex-[0_0_auto]">
           <div className="w-fit [font-family:'Inter-Bold', Helvetica] font-bold text-secondary text-[24px] tracking-[0] leading-[28.8px] whitespace-nowrap">
@@ -212,7 +212,7 @@ const Find = () => {
           </div>
         </div>
 
-        <div className="flex items-start gap-[10px]">
+        <div className="hidden sm:flex items-start gap-[10px]">
           <div className="relative items-center justify-center flex gap-[10px]">
             <img className="" alt="Ellipse" src="images/ellipse-15.svg" />
             <img
@@ -231,7 +231,7 @@ const Find = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full mx-auto">
         <Swiper
           slidesPerView={1}
           spaceBetween={0}
@@ -242,24 +242,24 @@ const Find = () => {
           breakpoints={{
             800: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             1100: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 0,
             },
             1500: {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 0,
             },
           }}
           modules={[Pagination]}
-          className="mySwiper px-[200px]"
+          className="mySwiper mx-auto"
         >
           {cardItems.map((item) => {
             return (
               <SwiperSlide key={item.id}>
-                <Card {...item} className="mx-auto sm:mx-[50px]" />
+                <Card {...item}/>
               </SwiperSlide>
             );
           })}

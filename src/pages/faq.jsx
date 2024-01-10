@@ -13,22 +13,22 @@ const Faq = () => {
   
   return(
     <div id="faq" className="flex flex-col items-center mt-[100px] gap-[46px]">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center w-full">
         <div className="w-fit font-bold text-secondary text-[30px] tracking-[0] leading-[36px] whitespace-nowrap">
           FAQ
         </div>
-        <div className="w-fit font-bold text-[#ffffff] text-[40px] tracking-[0] leading-[48px] whitespace-nowrap">
+        <div className="w-fit font-bold text-[#ffffff] text-[30px] sm:text-[40px] tracking-[0] leading-[48px] whitespace-nowrap">
           Your questions, answered
         </div>
       </div>
-      <div className="flex flex-col gap-[16px] transition-all duration-300 ease-in-out">
-      {faqs.map((que, index) => {
-        return (
-          <div key={"faq-" + index}>
-            <Question {...que} />
-          </div>
-        )
-      })}
+      <div className="flex flex-col gap-[16px] w-full transition-all duration-300 ease-in-out">
+        {faqs.map((que, index) => {
+          return (
+            <div key={"faq-" + index}>
+              <Question {...que} />
+            </div>
+          )
+        })}
       </div>
       <JoinOurCommunity />
     </div>

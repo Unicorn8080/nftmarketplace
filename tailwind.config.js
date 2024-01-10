@@ -6,6 +6,13 @@ module.exports = {
     "./src/layout/**/*.{html,js,ts,jsx,tsx}"
   ],
   theme: {
+    screens: {
+      'xs': '400px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
     extend: {
       backgroundImage: {
         'gradient': 'linear-gradient(180deg,rgb(255,64,96)_0%,rgb(255,128,196)_52%,rgb(109,94,234)_100%)',
