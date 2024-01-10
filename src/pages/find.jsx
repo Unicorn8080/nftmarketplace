@@ -231,7 +231,7 @@ const Find = () => {
           </div>
         </div>
       </div>
-      <div className="w-full mx-auto">
+      <div className="w-[100vw] mx-auto">
         <Swiper
           slidesPerView={1}
           spaceBetween={0}
@@ -240,7 +240,7 @@ const Find = () => {
             clickable: true,
           }}
           breakpoints={{
-            800: {
+            600: {
               slidesPerView: 2,
               spaceBetween: 0,
             },
@@ -260,6 +260,7 @@ const Find = () => {
             return (
               <SwiperSlide key={item.id}>
                 <Card {...item}/>
+                {/* slide1 */}
               </SwiperSlide>
             );
           })}

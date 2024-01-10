@@ -24,7 +24,7 @@ const Faq = () => {
       <div className="flex flex-col gap-[16px] w-full transition-all duration-300 ease-in-out">
         {faqs.map((que, index) => {
           return (
-            <div key={"faq-" + index}>
+            <div className="w-[100vw]" key={"faq-" + index}>
               <Question {...que} />
             </div>
           )
