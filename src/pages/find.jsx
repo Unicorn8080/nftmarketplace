@@ -231,7 +231,7 @@ const Find = () => {
           </div>
         </div>
       </div>
-      <div className="w-[100vw] mx-auto">
+      <div className="w-full mx-auto">
         <Swiper
           slidesPerView={1}
           spaceBetween={0}
@@ -258,7 +258,7 @@ const Find = () => {
         >
           {cardItems.map((item) => {
             return (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id} className="flex justify-center items-center">
                 <Card {...item}/>
                 {/* slide1 */}
               </SwiperSlide>
